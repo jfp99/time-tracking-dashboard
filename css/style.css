@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+  }
+}
+
+.profile-card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.profile-card .profile-info {
+  background-color: hsl(246, 80%, 60%);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .profile-card .profile-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+    justify-content: center;
+  }
+}
+.profile-card .profile-info .profile-img {
+  width: 100px;
+  height: 90px;
+  border: 3px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .profile-card .profile-info .profile-img {
+    margin-bottom: 2rem;
+  }
+}
+.profile-card .profile-info .profile-text .report-for {
+  color: hsl(236, 100%, 87%);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.profile-card .profile-info .profile-text .profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .profile-card .profile-info .profile-text .profile-name {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}
+.profile-card .time-periods {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .profile-card .time-periods {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.profile-card .time-periods .period-btn {
+  background: none;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.profile-card .time-periods .period-btn:hover {
+  color: hsl(0, 0%, 100%);
+}
+.profile-card .time-periods .period-btn.active {
+  color: hsl(0, 0%, 100%);
+}
+
+.activity-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .activity-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .activity-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.activity-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  padding-top: 2.5rem;
+}
+.activity-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: 0;
+}
+.activity-card.work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  opacity: 0.9;
+}
+.activity-card.play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  opacity: 0.9;
+}
+.activity-card.play::before {
+  background-image: url("/images/icon-play.svg");
+}
+.activity-card.study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  opacity: 0.9;
+}
+.activity-card.study::before {
+  background-image: url("/images/icon-study.svg");
+}
+.activity-card.exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  opacity: 0.9;
+}
+.activity-card.exercise::before {
+  background-image: url("/images/icon-exercise.svg");
+}
+.activity-card.social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  opacity: 0.9;
+}
+.activity-card.social::before {
+  background-image: url("/images/icon-social.svg");
+}
+.activity-card.self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  opacity: 0.9;
+}
+.activity-card.self-care::before {
+  background-image: url("/images/icon-self-care.svg");
+}
+.activity-card .card-content {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+.activity-card .card-content:hover {
+  background-color: #292f70;
+}
+.activity-card .card-content .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.activity-card .card-content .card-header .activity-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.activity-card .card-content .card-header .menu-btn {
+  background: none;
+  border: none;
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+}
+.activity-card .card-content .time-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .activity-card .card-content .time-data {
+    flex-direction: column;
+  }
+}
+.activity-card .card-content .time-data .current-hours {
+  font-size: 2rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .activity-card .card-content .time-data .current-hours {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.activity-card .card-content .time-data .previous-hours {
+  color: hsl(236, 100%, 87%);
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */
