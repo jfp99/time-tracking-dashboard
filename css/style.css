@@ -85,7 +85,7 @@ body {
 .profile-card .time-periods {
   padding: 1.5rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .profile-card .time-periods {
