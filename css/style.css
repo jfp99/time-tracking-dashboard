@@ -251,4 +251,10 @@ body {
 .activity-card .time-data .previous-hours {
   color: hsl(236, 100%, 87%);
   font-size: 0.9rem;
+}
+
+.activity-card:hover {
+  background-color: var(--clr-navy-medium);
+  transform: scale(1.02);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
