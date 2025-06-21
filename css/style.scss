@@ -15,7 +15,7 @@ $white: hsl(0, 0%, 100%);
 // Mixins
 @mixin card-bg($color) {
 background-color: $color;
-background-image: url('/images/icon-work.svg');
+background-image: url('../images/icon-work.svg');
 background-repeat: no-repeat;
 background-position: top right 10px;
 opacity: 0.9;
