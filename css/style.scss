@@ -172,6 +172,9 @@ z-index: 0;
 
 &.work {
 @include card-bg($light-red-work);
+&::before {
+    background-image: url('../images/icon-work.svg');
+}
 }
 
 &.play {

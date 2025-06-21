@@ -148,6 +148,9 @@ body {
   background-position: top right 10px;
   opacity: 0.9;
 }
+.activity-card.work::before {
+  background-image: url("../images/icon-work.svg");
+}
 .activity-card.play {
   background-color: hsl(195, 74%, 62%);
   background-image: url("../images/icon-work.svg");
