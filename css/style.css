@@ -156,7 +156,7 @@ body {
   opacity: 0.9;
 }
 .activity-card.play::before {
-  background-image: url("/images/icon-play.svg");
+  background-image: url("../images/icon-play.svg");
 }
 .activity-card.study {
   background-color: hsl(348, 100%, 68%);
@@ -166,7 +166,7 @@ body {
   opacity: 0.9;
 }
 .activity-card.study::before {
-  background-image: url("/images/icon-study.svg");
+  background-image: url("../images/icon-study.svg");
 }
 .activity-card.exercise {
   background-color: hsl(145, 58%, 55%);
@@ -176,7 +176,7 @@ body {
   opacity: 0.9;
 }
 .activity-card.exercise::before {
-  background-image: url("/images/icon-exercise.svg");
+  background-image: url("../images/icon-exercise.svg");
 }
 .activity-card.social {
   background-color: hsl(264, 64%, 52%);
@@ -186,7 +186,7 @@ body {
   opacity: 0.9;
 }
 .activity-card.social::before {
-  background-image: url("/images/icon-social.svg");
+  background-image: url("../images/icon-social.svg");
 }
 .activity-card.self-care {
   background-color: hsl(43, 84%, 65%);
@@ -196,12 +196,12 @@ body {
   opacity: 0.9;
 }
 .activity-card.self-care::before {
-  background-image: url("/images/icon-self-care.svg");
+  background-image: url("../images/icon-self-care.svg");
 }
 .activity-card .card-content {
   background-color: hsl(235, 46%, 20%);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
   position: relative;
   z-index: 1;
   transition: background-color 0.3s ease;

@@ -177,42 +177,42 @@ z-index: 0;
 &.play {
 @include card-bg($soft-blue-play);
 &::before {
-    background-image: url('/images/icon-play.svg');
+    background-image: url('../images/icon-play.svg');
 }
 }
 
 &.study {
 @include card-bg($light-red-study);
 &::before {
-    background-image: url('/images/icon-study.svg');
+    background-image: url('../images/icon-study.svg');
 }
 }
 
 &.exercise {
 @include card-bg($lime-green-exercise);
 &::before {
-    background-image: url('/images/icon-exercise.svg');
+    background-image: url('../images/icon-exercise.svg');
 }
 }
 
 &.social {
 @include card-bg($violet-social);
 &::before {
-    background-image: url('/images/icon-social.svg');
+    background-image: url('../images/icon-social.svg');
 }
 }
 
 &.self-care {
 @include card-bg($soft-orange-self-care);
 &::before {
-    background-image: url('/images/icon-self-care.svg');
+    background-image: url('../images/icon-self-care.svg');
 }
 }
 
 .card-content {
 background-color: $dark-blue;
 border-radius: 1rem;
-padding: 1.5rem;
+padding: 2rem;
 position: relative;
 z-index: 1;
 transition: background-color 0.3s ease;
