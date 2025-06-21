@@ -100,7 +100,7 @@ border-radius: 1rem;
     font-style: italic;
 
     @media (min-width: 768px) {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 1.2;
         font-weight: 700;
     }
@@ -223,7 +223,7 @@ transition: background-color 0.3s ease;
 &:hover {
     background-color: lighten($dark-blue, 10%);
 }
-
+}
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -266,6 +266,5 @@ transition: background-color 0.3s ease;
     color: $pale-blue;
     font-size: 0.9rem;
     }
-}
 }
 }
